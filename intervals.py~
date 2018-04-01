@@ -1,0 +1,7 @@
+def a_range(start, finish, how="(,)", step_size=1):
+    begin, end = how.split(",")
+    if begin == "(":
+        start += step_size
+    if end == ")":
+        finish -= step_size
+    
